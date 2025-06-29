@@ -1,0 +1,34 @@
+GET localhost:9009/posts
+
+###
+
+GET localhost:9009/posts/5
+
+###
+
+GET localhost:9009/postExists/1
+
+###
+
+POST localhost:9009/createPost
+Content-Type: application/json
+
+{ "userId" : 5, "title" : "foo", "body" : "bar"}
+
+###
+
+POST localhost:9009/postCreated
+Content-Type: application/json
+
+{ "userId" : 5, "title" : "foo", "body" : "bar"}
+
+###
+
+DELETE localhost:9009/deletePost/1
+
+###
+
+PUT localhost:9009/putPost/1
+Content-Type: application/json
+
+{ "userId" : 5, "title" : "foo", "body" : "bar"}
